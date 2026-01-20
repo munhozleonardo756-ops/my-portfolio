@@ -4,6 +4,8 @@ import { Cards, Container, Inner } from "./styles";
 import Bladoom from "@/assets/bladoom.webp";
 import EstoqueImovel from "@/assets/estoque-imovel.webp";
 import ESP from "@/assets/esp.webp";
+import Caioba from "@/assets/caioba.webp";
+import EstoqueImovelOfertas from "@/assets/estoque-imovel-ofertas.webp";
 
 const PROJECTS = [
   {
@@ -22,6 +24,39 @@ const PROJECTS = [
       "WebSocket",
     ],
     link: "https://bladoom.io",
+  },
+  {
+    image: Caioba,
+    name: "Caioba Soccer Club",
+    description: "O Maior Family Soccer Camp do mundo",
+    skills: [
+      "React",
+      "Styled-components",
+      "SEO",
+      "Axios",
+      "Zod",
+      "REST API",
+      "React query",
+      "SEO",
+      "PHP",
+      "Integração com RD station",
+    ],
+    link: "https://caiobasc.com.br/",
+  },
+  {
+    image: EstoqueImovelOfertas,
+    name: "App Estóque Imóvel Ofertas",
+    description: "Aplicativo focado em listagem de ofertas de imóveis",
+    skills: [
+      "React-native",
+      "Styled-components",
+      "Push notifications",
+      "Expo",
+      "React query",
+      "Axios",
+      "Supabase",
+    ],
+    link: "https://apps.apple.com/br/app/estoque-im%C3%B3vel-ofertas/id6756506633",
   },
   {
     image: EstoqueImovel,

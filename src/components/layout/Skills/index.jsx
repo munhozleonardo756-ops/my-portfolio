@@ -1,3 +1,5 @@
+import { SKILLS } from "./skills";
+
 import {
   Container,
   Inner,
@@ -7,25 +9,6 @@ import {
   SkillsGrid,
   SkillTag,
 } from "./styles";
-
-const SKILLS = {
-  "Front-end": [
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "React",
-    "React Native",
-    "Styled-components",
-    "SEO",
-    "Acessibilidade",
-    "WebSocket",
-    "i18n",
-    "Desenvolvimento de jogos web",
-  ],
-  "Back-end & APIs": ["PHP", "Laravel", "REST API"],
-  "Banco de dados & BaaS": ["MySQL", "Postgres", "Supabase", "Firebase"],
-  Ferramentas: ["GitHub"],
-};
 
 const SkillsSection = () => {
   return (

@@ -28,7 +28,7 @@ export const MainTitle = styled.h1`
   margin-bottom: 1.25rem;
   color: ${({ theme }) => theme.colors.text};
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 2.1rem;
   }
 `;
@@ -58,8 +58,12 @@ const BaseButton = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.1s ease, box-shadow 0.15s ease,
-    background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
 
   &:hover {
     transform: translateY(-1px);

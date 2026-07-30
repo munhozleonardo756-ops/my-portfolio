@@ -21,11 +21,11 @@ export default createGlobalStyle`
         background-color: ${({ theme }) => theme.colors.background};
         scroll-behavior: smooth;
 
-        @media(max-width: 768px){
+        @media(max-width: ${({ theme }) => theme.breakpoints.tablet}){
             font-size: 13px;
         }
         
-        @media(max-width: 425px){
+        @media(max-width: ${({ theme }) => theme.breakpoints.mobile}){
             font-size: 10px;
         }
     }

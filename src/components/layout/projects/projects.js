@@ -1,13 +1,10 @@
-import Card from "../card";
-import { Cards, Container, Inner } from "./styles";
-
 import Bladoom from "@/assets/bladoom.webp";
 import EstoqueImovel from "@/assets/estoque-imovel.webp";
 import ESP from "@/assets/esp.webp";
 import Caioba from "@/assets/caioba.webp";
 import EstoqueImovelOfertas from "@/assets/estoque-imovel-ofertas.webp";
 
-const PROJECTS = [
+export const PROJECTS = [
   {
     image: Bladoom,
     name: "Bladoom",
@@ -27,7 +24,7 @@ const PROJECTS = [
   },
   {
     image: Caioba,
-    name: "Caioba Soccer Club",
+    name: "Caioba Soccer Camp",
     description: "O Maior Family Soccer Camp do mundo",
     skills: [
       "React",
@@ -83,32 +80,3 @@ const PROJECTS = [
     link: "https://esoccerprogram.com",
   },
 ];
-
-const Projects = () => {
-  return (
-    <Container id="projects">
-      <Inner>
-        <h1>Meus Projetos</h1>
-        <p>
-          Veja alguns dos meus principais projetos de desenvolvimento de
-          front-end.
-        </p>
-
-        <Cards>
-          {PROJECTS.map((project, index) => (
-            <Card
-              key={index}
-              image={project.image}
-              description={project.description}
-              projectName={project.name}
-              skills={project.skills}
-              link={project.link}
-            />
-          ))}
-        </Cards>
-      </Inner>
-    </Container>
-  );
-};
-
-export default Projects;

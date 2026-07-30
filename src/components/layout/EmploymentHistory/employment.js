@@ -1,14 +1,4 @@
-import {
-  Container,
-  SectionHeader,
-  Timeline,
-  Employment,
-  Occupation,
-  Period,
-  Description,
-} from "./styles";
-
-const EMPLOYMENT = [
+export const EMPLOYMENT = [
   {
     name: "Desenvolvedor Full Stack - YPB Marketing Digital",
     period: "08/2023 - Atual",
@@ -28,26 +18,3 @@ const EMPLOYMENT = [
       "Realizei manutenção de computadores, suporte via helpdesk, configuração de redes e impressoras, atendimento ao usuário, formatação de máquinas e configuração de PABX e cabeamento.",
   },
 ];
-
-const EmploymentHistory = () => {
-  return (
-    <Container id="employment">
-      <SectionHeader>
-        <h2>Experiências profissionais</h2>
-        <p>Um resumo das principais funções e projetos</p>
-      </SectionHeader>
-
-      <Timeline>
-        {EMPLOYMENT.map((occupation) => (
-          <Employment key={occupation.name}>
-            <Occupation>{occupation.name}</Occupation>
-            <Period>{occupation.period}</Period>
-            <Description>{occupation.description}</Description>
-          </Employment>
-        ))}
-      </Timeline>
-    </Container>
-  );
-};
-
-export default EmploymentHistory;

@@ -25,6 +25,12 @@ const theme = {
     border: "rgba(15, 23, 42, 0.12)",
   },
 
+  breakpoints: {
+    desktop: "1024px",
+    tablet: "768px",
+    mobile: "425px",
+  },
+
   fonts: {
     body: "'Inter', sans-serif",
   },
